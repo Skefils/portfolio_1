@@ -4,6 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" id="logo"
+          ><img src="/assets/Gianni Rosinelli.svg" alt=""
+        /></a>
+        <div class="toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="menu">
+          <div class="all-links">
+            <li class="item">
+              <a href="index.html" class="links" id="home-page">Home</a>
+            </li>
+            <li class="item">
+              <a
+                href="/portfolio/portfolio.html"
+                class="links"
+                id="portfolio-page"
+                >Portfolio</a
+              >
+            </li>
+            <li class="item">
+              <a href="/contact/contact.html" class="links" id="contacts-page"
+                >Contacts</a
+              >
+            </li>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Skefils"
+              ><img src="/assets/icons8-github.svg" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/gianni-rosinelli-29005a290/"
+              ><img src="/assets/icons8-linked-in.svg" alt=""
+            /></a>
+            <a href="https://twitter.com/SkefilR"
+              ><img src="/assets/icons8-twitterx.svg" alt=""
+            /></a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <!-- Form Section -->
+    <section class="form-section">
+      <form action="text">
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="gmail">Gmail</label>
+          <input type="text" name="gmail" id="gmail" />
+        </div>
+        <div>
+          <label for="name">Mobile Number</label>
+          <input type="number" name="number" id="number" />
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </section>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="links">
+        <div class="link--wrapper">
+          <div class="link--items">
+            <a href="/home/index.html">Home</a>
+            <a href="/contact/contact.html">Contact</a>
+            <a href="/portfolio/portfolio.html">Portfolio</a>
+          </div>
+        </div>
+        <div class="socials">
+          <a
+            href="https://twitter.com/SkefilR"
+            class="socials--link"
+            target="_blank"
+          >
+            <img src="/assets/icons8-twitterx.svg" alt="" />
+          </a>
+          <a
+            href="https://github.com/Skefils"
+            class="socials--link"
+            target="_blank"
+          >
+            <img src="/assets/icons8-github.svg" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gianni-rosinelli-29005a290/"
+            class="socials--link"
+            target="_blank"
+          >
+            <img src="/assets/icons8-linked-in.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <p class="rights">Gianni Rosinelli ©</p>
+    </div>
+    <script src="/index.js"></script>
+  </body>
 </html>

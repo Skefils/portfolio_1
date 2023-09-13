@@ -5,109 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="/contact/contact.html" />
-    <link rel="stylesheet" href="/portfolio/portfolio.html" />
-    <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <nav>
-      <!-- Tablet and Desktop -->
-      <div class="top-left">
-        <a href="/home/index.html">
-          <img
-            class="top-left-img"
-            src="/assets/Gianni Rosinelli.svg"
-            alt="logo-of-name"
-          />
-        </a>
-      </div>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" id="logo"
+          ><img src="/assets/Gianni Rosinelli.svg" alt=""
+        /></a>
+        <div class="toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-      <div class="top-middle">
-        <ul class="primary-navigation" id="primary-navigation flex">
-          <li>
-            <a
-              class="top-middle-a"
-              href="/home/
-            index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a class="top-middle-a" href="/portfolio/portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a class="top-middle-a" href="/contact/contact.html">Contacts</a>
-          </li>
+        <ul class="menu">
+          <div class="all-links">
+            <li class="item">
+              <a href="index.html" class="links" id="home-page">Home</a>
+            </li>
+            <li class="item">
+              <a
+                href="/portfolio/portfolio.html"
+                class="links"
+                id="portfolio-page"
+                >Portfolio</a
+              >
+            </li>
+            <li class="item">
+              <a href="/contact/contact.html" class="links" id="contacts-page"
+                >Contacts</a
+              >
+            </li>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Skefils"
+              ><img src="/assets/icons8-github.svg" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/gianni-rosinelli-29005a290/"
+              ><img src="/assets/icons8-linked-in.svg" alt=""
+            /></a>
+            <a href="https://twitter.com/SkefilR"
+              ><img src="/assets/icons8-twitterx.svg" alt=""
+            /></a>
+          </div>
         </ul>
       </div>
-
-      <div class="top-right-a">
-        <div>
-          <a href="https://twitter.com/SkefilR">
-            <img
-              class="svg"
-              class="svg"
-              src="/assets/icons8-twitterx.svg"
-              alt="twitter-logo"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="https://github.com/Skefils">
-            <img
-              class="svg"
-              src="/assets/icons8-github.svg"
-              alt="github-logo"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/gianni-rosinelli-29005a290/">
-            <img
-              class="svg"
-              src="/assets/icons8-linked-in.svg"
-              alt="LinkedIn-logo"
-            />
-          </a>
-        </div>
-      </div>
-      <!-- Mobile -->
-      <div class="hamburger">
-        <a href="https://twitter.com/SkefilR">
-          <img
-            class="svg"
-            class="svg"
-            src="/assets/hamburger.svg"
-            alt="twitter-logo"
-          />
-        </a>
-      </div>
     </nav>
-    <!--    <div class="hero">
-      <div class="left-side-hero">
-        <h3>Front End Developer</h3>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum
-          culpa fugiat voluptas
-        </h1>
-        <p>
-          expedita doloremque blanditiis ut, perspiciatis, obcaecati, corrupti
-          eveniet? Similique excepturi earum nostrum enim vitae cumque ipsam.
-          Veritatis?
-        </p>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="content">
+        <div class="container">
+          <h1>Hey there! Welcome to my corner of the internet.</h1>
+          <p>
+            I'm the brains (and heart) behind this site. Check out my cool stuff
+            in the portfolio, get to know me on the About page, and if you wanna
+            chat, hit me up on the Contact section. Dive in, and let's connect!
+            😎✌️
+          </p>
+        </div>
+        <div class="image--container">
+          <div class="img--card">
+            <img loading="lazy" src="/assets/setup.jpg" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="right-side-hero">
-        <img src="#" alt="" />
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="container">
+        <div class="image--container">
+          <div class="img--card">
+            <img loading="lazy" src="/assets/Tokyo.jpg" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <h2>About Myself</h2>
+          <h3>My name is Gianni Rosinelli</h3>
+          <p>
+            I'm a 19-year-old guy who's all about gaming, anime, front-end
+            development, and a deep interest in Asian culture. Hanging out with
+            friends is a must, too—it's all about balancing screen time with
+            real-world connections.
+          </p>
+        </div>
       </div>
-    </div> -->
+    </div>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="links">
+        <div class="link--wrapper">
+          <div class="link--items">
+            <a href="/home/index.html">Home</a>
+            <a href="/contact/contact.html">Contact</a>
+            <a href="/portfolio/portfolio.html">Portfolio</a>
+          </div>
+        </div>
+        <div class="socials">
+          <a
+            href="https://twitter.com/SkefilR"
+            class="socials--link"
+            target="_blank"
+          >
+            <img src="/assets/icons8-twitterx.svg" alt="" />
+          </a>
+          <a
+            href="https://github.com/Skefils"
+            class="socials--link"
+            target="_blank"
+          >
+            <img src="/assets/icons8-github.svg" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gianni-rosinelli-29005a290/"
+            class="socials--link"
+            target="_blank"
+          >
+            <img src="/assets/icons8-linked-in.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <p class="rights">Gianni Rosinelli ©</p>
+    </div>
+    <script src="/index.js"></script>
   </body>
 </html>
